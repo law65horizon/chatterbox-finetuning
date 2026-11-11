@@ -41,7 +41,14 @@ else:
         "repetition_penalty": 1.2,
     }
 
-TEXT_TO_SAY = "Merhaba, sesimi geliştirmem oldukça uzun zaman aldı ve şimdi sahip olduğuma göre, sessiz kalmayacağım."
+TEXT_TO_SAY = """
+What’s two plus two?”
+Something about the question irritates me. [sigh] I’m tired. I drift back to sleep.
+A few minutes pass, then I hear it again.
+“What’s two plus two?”
+The soft, feminine voice lacks emotion and the pronunciation is identical
+to the previous time she said it. It’s a computer. A computer is hassling me.
+"""
 AUDIO_PROMPT = cfg.inference_prompt_path
 OUTPUT_FILE = "./output.wav"
 
