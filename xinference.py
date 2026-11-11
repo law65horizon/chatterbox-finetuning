@@ -55,12 +55,12 @@ def load_base_engine():
     EngineClass = ChatterboxTurboTTS if IS_TURBO else ChatterboxTTS
     engine = EngineClass.from_local(BASE_MODEL_DIR, device="cpu")
 
-    # if IS_TURBO:
-    #     if engine.model_label != MODE_NAME:
-    #         raise RuntimeError(f"Config expects {MODE_NAME}, but '{BASE_MODEL_DIR}' contains {engine.model_label}.")
-    #     tok_len = len(engine.tokenizer)
-    #     if tok_len != cfg.new_vocab_size:
-    #         raise ValueError(f"Tokenizer len {tok_len} != new_vocab_size {cfg.new_vocab_size}. Check the output of setup.py.")
+    if IS_TURBO:
+        if engine.model_label != MODE_NAME:
+            raise RuntimeError(f"Config expects {MODE_NAME}, but '{BASE_MODEL_DIR}' contains {engine.model_label}.")
+        tok_len = len(engine.tokenizer)
+        if tok_len != cfg.new_vocab_size:
+            raise ValueError(f"Tokenizer len {tok_len} != new_vocab_size {cfg.new_vocab_size}. Check the output of setup.py.")
 
     return engine
 
