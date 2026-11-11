@@ -209,7 +209,7 @@ def main():
     #     engine = load_finetuned_engine_lora(device)
     # else:
     #     engine = load_finetuned_engine_full(device)
-    engine = load_plain_base_engine()
+    engine = load_plain_base_engine(device)
 
     sentences = re.split(r'(?<=[.?!])\s+', TEXT_TO_SAY.strip())
     sentences = [s for s in sentences if s.strip()]
