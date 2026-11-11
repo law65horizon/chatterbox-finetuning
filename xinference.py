@@ -64,6 +64,15 @@ def load_base_engine():
 
     return engine
 
+def load_plain_base_engine(device):
+    """Original pretrained model, no fine-tuning, moved to the target device."""
+    engine = load_base_engine()  # loads on CPU
+    engine.t3.to(device).eval()
+    engine.s3gen.to(device).eval()
+    engine.ve.to(device).eval()
+    engine.device = device
+    return engine
+
 
 def load_finetuned_engine_lora(device):
     """Loads the engine and restores a LoRA-finetuned T3 (with resized vocab)."""
@@ -193,7 +202,7 @@ def main():
     #     engine = load_finetuned_engine_lora(device)
     # else:
     #     engine = load_finetuned_engine_full(device)
-    engine = load_base_engine()
+    engine = load_plain_base_engine()
 
     sentences = re.split(r'(?<=[.?!])\s+', TEXT_TO_SAY.strip())
     sentences = [s for s in sentences if s.strip()]
