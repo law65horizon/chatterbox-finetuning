@@ -25,7 +25,7 @@ BASE_MODEL_DIR = cfg.model_dir
 OUTPUT_DIR = cfg.output_dir
 MODE_NAME = "Nano" if cfg.is_nano else "Turbo" if IS_TURBO else "Standard"
 
-LORA_CHECKPOINT_PATH = os.path.join(OUTPUT_DIR, "new_lang_adapter")
+LORA_CHECKPOINT_PATH = "/kaggle/working/chatterbox_outputs.tar.gz"
 FINETUNED_WEIGHTS = os.path.join(OUTPUT_DIR, cfg.full_ft_filename)  # Full fine-tune only
 
 # Generation params (Turbo/Nano ignore cfg_weight and exaggeration)
