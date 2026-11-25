@@ -42,7 +42,7 @@ else:
         "repetition_penalty": 1.2,
     }
 
-TEXT_FILE = "./test.md"
+TEXT_FILE = "test.md"
 AUDIO_PROMPT = cfg.inference_prompt_path
 OUTPUT_FILE = f"./output-{datetime.now():%H-%M}.wav"  # output-<hour>-<minute>.wav
 
