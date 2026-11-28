@@ -1,15 +1,7 @@
 # Section 1
 
-What’s two plus two?”
-Something about the question irritates me. [sigh] I’m tired. I drift back to sleep.
-A few minutes pass, then I hear it again.
-“What’s two plus two?”
-The soft, feminine voice lacks emotion and the pronunciation is identical
-to the previous time she said it. It’s a computer. A computer is hassling me.
+A pronouncement: “The word of Jehovah concerning Israel,” declares Jehovah, The One who stretched out the heavens, Who laid the foundation of the earth, And who formed the spirit of man within him.
 
 # Section 2
 
-I’m even more irritated now.
-[groan] “Lrmln,” I say. I’m surprised. I meant to say “Leave me alone”—a
-completely reasonable response in my opinion—but I failed to speak.
-“Incorrect,” says the computer.
+“Here I am making Jerusalem a cup that causes all the surrounding peoples to stagger; and there will be a siege against Judah as well as against Jerusalem. 3 In that day I will make Jerusalem a heavy stone to all the peoples.
