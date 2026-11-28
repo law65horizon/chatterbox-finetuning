@@ -13,19 +13,3 @@ I’m even more irritated now.
 [groan] “Lrmln,” I say. I’m surprised. I meant to say “Leave me alone”—a
 completely reasonable response in my opinion—but I failed to speak.
 “Incorrect,” says the computer.
-
-# Section 3
-
-What’s two plus two?
-Time for an experiment. I’ll try to say hello.
-“Hlllch?” I say.
-“Incorrect. What’s two plus two?”
-
-What’s going on? I want to find out, but I don’t have much to work with.
-
-# Section 4
-
-I can’t see. I can’t hear anything other than the computer. I can’t even feel.
-No, that’s not true. I feel something. I’m lying down. I’m on something
-soft. A bed.
-I think my eyes are closed. That’s not so bad.
