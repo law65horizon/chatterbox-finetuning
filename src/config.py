@@ -46,7 +46,8 @@ class TrainConfig:
     lora_alpha: int = 64
     turbo_lora_target_modules: List[str] = field(default_factory=lambda: ["c_attn", "c_proj", "c_fc", "spkr_enc"])
     lora_target_modules: List[str] = field(default_factory=lambda: ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj", "spkr_enc"])
-    lora_modules_to_save: List[str] = field(default_factory=lambda: ["text_emb", "text_head"])
+    lora_modules_to_save: List[str] = field(default_factory=list)
+    # lora_modules_to_save: List[str] = field(default_factory=lambda: ["text_emb", "text_head"])
 
     # --- Vocabulary ---
     # Must equal len(tokenizer). Turbo/Nano: use the value printed by setup.py.
