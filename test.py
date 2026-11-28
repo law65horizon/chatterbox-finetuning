@@ -163,7 +163,7 @@ def generate_sentence_audio(engine, text, prompt_path, **kwargs):
     """Generates audio for a single sentence, trims silence, and returns (sr, wav, gen_seconds)."""
     start = time.perf_counter()
     try:
-        wav_tensor = engine.generate(text=text, audio_prompt_path=prompt_path)
+        wav_tensor = engine.generate(text=text)
         if isinstance(wav_tensor, tuple):
             wav_tensor = wav_tensor[0]
         wav_np = wav_tensor.squeeze().cpu().numpy()  # .cpu() syncs the GPU
